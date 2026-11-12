@@ -1,0 +1,17 @@
+<%- include('sub/head.ejs') %>
+  <body>
+    <%- include('sub/indexHeader.ejs') %>
+    <ul>
+      <% for (let i = 0; i < types.length; i++) { %>
+        <div class="types">
+          <br>
+          <li>
+            <a href="/list/<%= types[i].id %>">
+              <%= types[i].typeName %>
+            </a>
+          </li>
+        </div>
+      <% } %>
+    </ul>
+  </body>
+</html>

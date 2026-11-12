@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <title>Архітектура</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="text-center page-header container-fluid"
+           style="font-family:Times; background-color: #eeeeff">
+        <h1>Архітектура міста Львова</h1>
+      </div>
+    </div>
+    <ul>
+      <% for (let i = 0; i < types.length; i++) { %>
+        <div class="types">
+          <br>
+          <li>
+            <a href="/list/<%= types[i].id %>">
+              <%= types[i].typeName %>
+            </a>
+          </li>
+        </div>
+      <% } %>
+    </ul>
+  </body>
+</html>
